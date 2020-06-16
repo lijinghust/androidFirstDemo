@@ -34,7 +34,7 @@ import okhttp3.Callback;
 import okhttp3.Response;
 
 public class WeatherActivity extends AppCompatActivity {
-    private DrawerLayout drawerLayout;
+    public DrawerLayout drawerLayout;
     private Button navButton;
 
     private TextView titleCity;
