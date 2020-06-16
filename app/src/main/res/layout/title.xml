@@ -12,14 +12,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="title"/>
+        android:text="title"
+        android:textSize="20sp"
+        android:textColor="#fff"/>
 
     <TextView
         android:id="@+id/title_update_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:text="updatetime"/>
+        android:text="updatetime"
+        android:textSize="16sp"
+        android:textColor="#fff"/>
 
 
 </RelativeLayout>
