@@ -14,22 +14,25 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <LinearLayout
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
 
-                <include layout="@layout/title"/>
-                <include layout="@layout/now"/>
+                <include layout="@layout/title" />
+
+                <include layout="@layout/now" />
             </LinearLayout>
         </ScrollView>
+
         <fragment
             android:id="@+id/choose_area"
             android:name="com.coolweahter.android.ChooseAreaFragment"
-            android:layout_height="match_parent"
             android:layout_width="match_parent"
-            android:layout_gravity="start"
-            />
+            android:layout_height="match_parent"
+            android:layout_gravity="start" />
     </androidx.drawerlayout.widget.DrawerLayout>
 
 </FrameLayout>
