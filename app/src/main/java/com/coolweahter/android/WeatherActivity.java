@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.coolweahter.android.gson.Weather;
+import com.coolweahter.android.service.AutoUpdateService;
 import com.coolweahter.android.util.HttpUtil;
 import com.coolweahter.android.util.Utility;
 import com.google.gson.Gson;
@@ -162,6 +164,9 @@ public class WeatherActivity extends AppCompatActivity {
         weatherInfoText.setText(weatherInfo);
 
         weatherLayout.setVisibility(View.VISIBLE);
+
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
     public void loadBingPic(){
         String address = "http://guolin.tech/api/bing_pic";
